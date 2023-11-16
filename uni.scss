@@ -1,0 +1,224 @@
+/* 页面左右间距 */
+$page-row-spacing: 30upx;
+$page-color-base: #f8f8f8;
+$page-color-light: #f8f6fc;
+$base-color: #fa436a;
+
+/* 文字尺寸 */
+$font-sm: 24upx;
+$font-base: 28upx;
+$font-lg: 32upx;
+/*文字颜色*/
+$font-color-dark: #303133;
+$font-color-base: #606266;
+$font-color-light: #909399;
+$font-color-disabled: #C0C4CC;
+$font-color-spec: #4399fc;
+/* 边框颜色 */
+$border-color-dark: #DCDFE6;
+$border-color-base: #E4E7ED;
+$border-color-light: #EBEEF5;
+/* 图片加载中颜色 */
+$image-bg-color: #eee;
+/* 行为相关颜色 */
+$uni-color-primary:#fa436a;
+$uni-color-success: #4cd964;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+@import "uview-ui/theme.scss";
+
+
+/* 颜色变量 */
+$uni-btn-color: #007aff;
+
+/* 行为相关颜色 */
+$uni-color-primary: #007aff;
+$uni-color-success: #0b0f0c;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+
+/* 文字基本颜色 */
+$uni-text-color: #333; //基本色
+$uni-text-color-inverse: #fff; //反色
+$uni-text-color-grey: #999; //辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #808080;
+$uni-text-color-disable: #c0c0c0;
+
+/* 背景颜色 */
+$uni-bg-color: #fff;
+$uni-bg-color-grey: #f8f8f8;
+$uni-bg-color-hover: #f1f1f1; //点击状态颜色
+$uni-bg-color-mask: rgba(0, 0, 0, 0.4); //遮罩颜色
+
+/* 边框颜色 */
+$uni-border-color: #c8c7cc;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$uni-font-size-sm: 24rpx;
+$uni-font-size-base: 28rpx;
+$uni-font-size-lg: 32rpx;
+
+/* 图片尺寸 */
+$uni-img-size-sm: 40rpx;
+$uni-img-size-base: 52rpx;
+$uni-img-size-lg: 80rpx;
+
+/* Border Radius */
+$uni-border-radius-sm: 4rpx;
+$uni-border-radius-base: 6rpx;
+$uni-border-radius-lg: 12rpx;
+$uni-border-radius-circle: 50%;
+
+/* 水平间距 */
+$uni-spacing-row-sm: 10px;
+$uni-spacing-row-base: 20rpx;
+$uni-spacing-row-lg: 30rpx;
+
+/* 垂直间距 */
+$uni-spacing-col-sm: 8rpx;
+$uni-spacing-col-base: 16rpx;
+$uni-spacing-col-lg: 24rpx;
+
+/* 透明度 */
+$uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$uni-color-title: #2c405a; // 文章标题颜色
+$uni-font-size-title: 40rpx;
+$uni-color-subtitle: #555; // 二级标题颜色
+$uni-font-size-subtitle: 36rpx;
+$uni-color-paragraph: #3f536e; // 文章段落颜色
+$uni-font-size-paragraph: 30rpx;
+
+ $xkq-tit-color:#222;  //标题颜色 字号
+ $xkq-tit-site: 32rpx;  
+ 
+ 
+ $xkq-text-color:#555;  //内容颜色 字号
+  $xkq-text-site: 28rpx; 
+
+// /* html相关样式 */
+.procontent{
+	padding: 20upx 30upx;
+	background: #fff;
+	width: 750upx;
+	rich-text{
+		p{
+			max-width: 100%;
+			image{
+			    border: 0;
+			    max-width: 100%;
+			    display: block;
+			    width: auto !important;
+			    height: auto !important;
+			}
+		}
+		font-size: 30upx;
+		
+	}
+	
+	rich-text image{
+		border: 0;
+		max-width: 100%;
+		display: block;
+		width: auto !important;
+		height: auto !important;
+	}
+}
+.procontent a {
+    color: #4285f4;
+}
+.procontent h1,.procontent h2,.procontent h3,.procontent h4,.procontent h5,.procontent h6{
+    margin: 0.3upx 0;
+    color: #0064A8;
+    line-height: 2upx;
+}
+.procontent h1{
+    font-size: 1.4upx;
+}
+.procontent h2{
+    font-size: 1.2upx;
+}
+.procontent h3{
+    font-size: 1.1upx;
+}
+.procontent h4,
+.procontent h5,
+.procontent h6 {
+    font-size: 1upx;
+}
+
+.procontent hr {
+    height: 0.2upx;
+    border: 0;
+    color: #CCCCCC;
+    background-color: #CCCCCC;
+}
+
+.procontent p,
+.procontent blockquote,
+.procontent ul,
+.procontent ol,
+.procontent dl,
+.procontent li,
+.procontent table,
+.procontent pre {
+    margin: 8upx 0;
+}
+
+.procontent p {
+    margin: 1upx 0;
+	font-size: 24upx;
+    line-height: 56upx;
+}
+
+.procontent pre {
+    background-color: #F8F8F8;
+    border: 1upx solid #CCCCCC;
+    border-radius: 3upx;
+    overflow: auto;
+    padding: 5upx;
+}
+
+.procontent blockquote {
+    color: #666666;
+    margin: 0;
+    border-left: 0.2upx #EEE solid;
+}
+
+.procontent ul,
+.procontent ol {
+    margin: 1upx 0;
+    padding: 0 0 0 2upx;
+}
+
+.procontent li p:last-child {
+    margin: 0
+}
+
+.procontent dd {
+    margin: 0 0 0 2upx;
+}
+
+.procontent img {
+    border: 0;
+    max-width: 100%;
+    display: block;
+    width: auto !important;
+    height: auto !important;
+}
+
+.procontent table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1 solid #eee;
+}
+
+.procontent td {
+    vertical-align: top;
+    padding: 0.2upx 0;
+    border-top: 1upx solid #EEEEEE;
+}
