@@ -1,190 +1,207 @@
 {
 	"easycom": {
-	        // 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
-	        // 下载安装方式
-	        "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
-	        // npm安装方式
-	        // "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
-	 },
-	 "lazyCodeLoading":"requiredComponents",
+		// 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+		// 下载安装方式
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		// npm安装方式
+		// "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"lazyCodeLoading": "requiredComponents",
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-	// 用户页面
-	{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "uni-app",
-			// "enablePullDownRefresh": true,
-			"navigationStyle": "custom"
-		}
-	},
-	{
-		"path": "pages/indexSubPage/goodsDetails",
-		"style": {
-			"navigationBarTitleText": "uni-app",
-			"navigationStyle": "custom"
-		}
-	},
-	{
-		"path": "pages/user/user",
-		"style": {
-			"navigationBarTitleText": "个人中心"
-		}
-	},
-	{
-		"path": "pages/user/user_info",
-		"style": {
-			"navigationBarTitleText": "个人信息"
-		}
-	},
+		// 用户页面
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				// "enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/indexSubPage/goodsDetails",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/user/user_info",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
 
-	{
-		"path": "pages/pagesOrder/submitOrder",
-		"style": {
-			"navigationBarTitleText": "结算页"
-		}
-	},
-	{
-		"path": "pages/index/car",
-		"style": {
-			"navigationBarTitleText": "购物车"
-		}
-	},
-	{
-		"path": "pages/pagesUser/chooseCoupons",
-		"style": {
-			"navigationBarTitleText": "优惠券"
-		}
-	},
-	{
-		"path": "pages/pagesOrder/harvestAddress",
-		"style": {
-			"navigationBarTitleText": "收获信息"
-		}
-	},
-	
-	
-	
-	
-	// {
-	// 	"path": "pages/pagesUser/myIntegral",
-	// 	"style": {
-	// 		"navigationBarTitleText": "我的积分"
-	// 	}
-	// },
-	
-	{
-		"path": "pages/pagesUser/orderList",
-		"style": {
-			"navigationBarTitleText": "订单列表"
-		}
-	},
-	{
-		"path": "pages/pagesUser/evaluationCenter",
-		"style": {
-			"navigationBarTitleText": "评价中心"
-		}
-	},
-	{
-		"path": "pages/pagesUser/evaluation",
-		"style": {
-			"navigationBarTitleText": "评价"
-		}
-	},
-	{
-		"path": "pages/pagesUser/logistics",
-		"style": {
-			"navigationBarTitleText": "查看物流"
-		}
-	},
-	{
-		"path": "pages/pagesUser/reservationorder",
-		"style": {
-			"navigationBarTitleText": "订房订单"
-		}
-	},
-	{
-		"path": "pages/pagesUser/paymentdetails",
-		"style": {
-			"navigationBarTitleText": "订单详情"
-		}
-	},
-	{
-		"path": "pages/index/kefu",
-		"style": {
-			"navigationBarTitleText": "uni-app"
-		}
-	},
-	{
-		"path": "pages/index/search",
-		"style": {
-			"navigationBarTitleText": "搜索页面"
-		}
-	},
-	{
-		"path": "pages/indexSubPage/list",
-		"style": {
-			"navigationBarTitleText": "uni-app"
-		}
-	},
-	{
-		"path": "pages/pagesUser/userInfo",
-		"style": {
-			"navigationBarTitleText": "个人中心"
-		}
-	},
-	{
-		"path": "pages/pagesOrder/orderSuccess",
-		"style": {
-			"navigationBarTitleText": "购买成功"
-		}
-	},
-	{
-		"path": "pages/warrant/warrant",
-		"style": {
-			"navigationBarTitleText": "登录"
-		}
-	},
-	{
-		"path": "pages/warrant/warphone",
-		"style": {
-			"navigationBarTitleText": "授权"
-		}
-	},
-	{
-		"path": "pages/perfect/service",
-		"style": {
-			"navigationBarTitleText": ""
-		}
-	},
-	{
-		"path": "pages/roomlist/index",
-		"style": {
-			"navigationBarTitleText": ""
-		}
-	},
-	{
-		"path": "pages/roomlist/roomdetailed",
-		"style": {
-			"navigationBarTitleText": ""
-		}
-	},
-	{
-		"path": "pages/roomlist/detailed",
-		"style": {
-			"navigationBarTitleText": ""
-			// "navigationBarBackgroundColor": "#2371d1", // 顶部背景颜色
-			// "navigationBarTextStyle": "black" // 顶部文字颜色
-			// "navigationStyle":"custom"
-		}
-	}],
-	"subPackages":[{
-		"root":"subpack_page",
-		"pages":[
+		{
+			"path": "pages/pagesOrder/submitOrder",
+			"style": {
+				"navigationBarTitleText": "结算页"
+			}
+		},
+		{
+			"path": "pages/index/car",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/pagesUser/chooseCoupons",
+			"style": {
+				"navigationBarTitleText": "优惠券"
+			}
+		},
+		{
+			"path": "pages/pagesOrder/harvestAddress",
+			"style": {
+				"navigationBarTitleText": "收获信息"
+			}
+		},
+
+
+
+
+		// {
+		// 	"path": "pages/pagesUser/myIntegral",
+		// 	"style": {
+		// 		"navigationBarTitleText": "我的积分"
+		// 	}
+		// },
+
+		{
+			"path": "pages/pagesUser/orderList",
+			"style": {
+				"navigationBarTitleText": "订单列表"
+			}
+		},
+		{
+			"path": "pages/pagesUser/evaluationCenter",
+			"style": {
+				"navigationBarTitleText": "评价中心"
+			}
+		},
+		{
+			"path": "pages/pagesUser/evaluation",
+			"style": {
+				"navigationBarTitleText": "评价"
+			}
+		},
+		{
+			"path": "pages/pagesUser/logistics",
+			"style": {
+				"navigationBarTitleText": "查看物流"
+			}
+		},
+		{
+			"path": "pages/pagesUser/reservationorder",
+			"style": {
+				"navigationBarTitleText": "订房订单"
+			}
+		},
+		{
+			"path": "pages/pagesUser/paymentdetails",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/index/kefu",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/index/search",
+			"style": {
+				"navigationBarTitleText": "搜索页面"
+			}
+		},
+		{
+			"path": "pages/indexSubPage/list",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/pagesUser/userInfo",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/pagesOrder/orderSuccess",
+			"style": {
+				"navigationBarTitleText": "购买成功"
+			}
+		},
+		{
+			"path": "pages/warrant/warrant",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/warrant/warphone",
+			"style": {
+				"navigationBarTitleText": "授权"
+			}
+		},
+		{
+			"path": "pages/perfect/service",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/roomlist/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/roomlist/roomdetailed",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/roomlist/detailed",
+			"style": {
+				"navigationBarTitleText": ""
+				// "navigationBarBackgroundColor": "#2371d1", // 顶部背景颜色
+				// "navigationBarTextStyle": "black" // 顶部文字颜色
+				// "navigationStyle":"custom"
+			}
+		},
+		
+		{
+			"path" : "pages/customizationStart/customizationStart",
+			"style" : 
 			{
-				"path" : "pagesUser/myIntegral",
-				"style" : {
+				"navigationBarTitleText" : "确认元素",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/customization/customization",
+			"style" : 
+			{
+				"navigationBarTitleText" : "定制",
+				"enablePullDownRefresh" : false
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "subpack_page",
+		"pages": [{
+				"path": "pagesUser/myIntegral",
+				"style": {
 					"navigationBarTitleText": "我的积分"
-					
+
 				}
 			},
 			{
@@ -231,28 +248,29 @@
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
 		"list": [{
-				"pagePath": "pages/index/index",
-				"iconPath": "static/tab/tabHomeIcon.png",
-				"iconPath": "static/tab/tabHomeIcon.png",
-				"text": "首页"
-		}, {
-				"pagePath": "pages/index/kefu",
-				"iconPath": "static/tab/tabkefuIcon.png",
-				"iconPath": "static/tab/tabkefuIcon.png",
-				"text": "客服"
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tab/tabHomeIcon.png",
+			"iconPath": "static/tab/tabHomeIcon.png",
+			"text": "首页"
+		}, 
+		{
+			"pagePath": "pages/index/kefu",
+			"iconPath": "static/tab/tabkefuIcon.png",
+			"iconPath": "static/tab/tabkefuIcon.png",
+			"text": "客服"
 		}, {
 			"pagePath": "pages/index/car",
 			"iconPath": "static/tab/tabShopIcon.png",
 			"iconPath": "static/tab/tabShopIcon.png",
-			"text": "购物车"
-	}, {
-		"pagePath": "pages/user/user",
-		"iconPath": "static/tab/tabUserIcon.png",
-		"iconPath": "static/tab/tabUserIcon.png",
-		"text": "我"
-}
-]
-},
+			"text": "购"
+		}, 
+		{
+			"pagePath": "pages/user/user",
+			"iconPath": "static/tab/tabUserIcon.png",
+			"iconPath": "static/tab/tabUserIcon.png",
+			"text": "我的"
+		}]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
